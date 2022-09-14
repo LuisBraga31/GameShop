@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #F3F3F3;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+.logo {
+    padding: 25px;
+}
+
+.navegacao {
+
+    display: flex;
+    gap: 30px;
+    color: red;
+    font-family: 'Roboto';
+}
+
+.navegacao > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navegacao > span {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Seção - Banner */
+.banner {
+    background-image: url('../imgs/fundo.png');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.banner > h2 {
+    font-size: 40px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.banner > h2 > span {
+    color: #D01418;
+}
+
+.banner > button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: white;
+    background-color: #D01418;
+    cursor: pointer;
+}
+
+/* Seção - Destaques */
+.destaques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.destaques-title {
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.destaques-cards {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card-destaque {
+    width: 265px;
+    height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    padding: 30px;
+}
+
+.card-destaque > .jogo {
+    background-color: aqua;
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+.card-destaque> .traco {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+}
+
+.card-destaque > .valor {
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.card-destaque > .valor-juros {
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+
+.card-destaque > .envio {
+    font-size: 10px;
+    font-family: 'Roboto';
+    color: #619D00;
+    text-decoration: none;
+}
+
+/* Seção - Estrelas */
+
+.estrelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.estrelas-title {
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.estrelas-cards {
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.card-estrela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 135px;
+    border-radius: 5px;
+}
+
+.card-estrela > p {
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #F3F3F3;
+}
+
+.cadeiras {
+    background-image: url('../imgs/cadeirasgamer.png');
+}
+
+.computadores {
+    background-image: url('../imgs/computadores.png');
+}
+
+
+/* Footer*/
+
+footer {
+
+    background-color: #222222;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer > img {
+    padding: 100px;
+}
+
+.footer > .redes {
+    padding-right: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #F3F3F3;
+}
+
+.redes-icones {
+    display: flex;
+    gap: 50px;
+}
+
+.copyright {
+    width: 100%;
+    padding: 10px;
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-align: center;
+
+    background-color: #C4C4C4;
+}
