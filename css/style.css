@@ -9,43 +9,68 @@
 body {
     width: 100%;
     background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+ 
 }
 
 /* Header */
 
 header {
+
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #222222;
 }
 
 .logo {
-    padding: 25px;
+   width: 30%;
+   display: flex;
+   align-items: center;  
 }
 
 .navegacao {
-
+    width: 60%;
     display: flex;
+    align-items: center;
+    justify-content: right;
     gap: 30px;
-    color: red;
-    font-family: 'Roboto';
+
 }
 
 .navegacao > a {
     font-size: 20px;
     text-decoration: none;
+    font-family: 'Roboto';
     color: white;
 }
 
-.navegacao > span {
-    padding-left: 50px;
-    padding-right: 50px;
+.navegacao > a:hover{
+    transition: 0.6s;
+    font-size: 25px;
+    color: #D01418;
 }
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    cursor: pointer;
+}
+
+.carrinho:hover {
+    transition: 0.5s;
+    color: azure;   
+}
+
 
 /* Main */
 
 main {
+    flex: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -88,6 +113,10 @@ main {
     cursor: pointer;
 }
 
+.banner > button:hover{
+    opacity: 80%;
+}
+
 /* Seção - Destaques */
 .destaques {
     display: flex;
@@ -106,7 +135,7 @@ main {
     width: 80%;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 60px;
 }
 
 .card-destaque {
@@ -119,13 +148,20 @@ main {
     gap: 5px;
     background-color: white;
     padding: 30px;
+    box-shadow: 5px 5px 10px lightgrey;
 }
 
 .card-destaque > .jogo {
-    background-color: aqua;
+    cursor: pointer;
     width: 60%;
     position: relative;
     left: 20%;
+}
+
+.card-destaque > .jogo:hover {
+    transition: 0.5s;
+    left: 15%;
+    width: 70%;
 }
 
 .card-destaque> .traco {
@@ -165,6 +201,7 @@ main {
 .estrelas-title {
     font-size: 20px;
     font-family: 'Roboto';
+    
 }
 
 .estrelas-cards {
@@ -172,7 +209,8 @@ main {
     display: flex;
     align-items: center;
 
-    justify-content: space-around;
+    justify-content: center;
+    gap: 60px;
 }
 
 .card-estrela {
@@ -182,6 +220,8 @@ main {
     width: 360px;
     height: 135px;
     border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
 }
 
 .card-estrela > p {
@@ -190,12 +230,22 @@ main {
     color: #F3F3F3;
 }
 
+
+.card-estrela > p:hover{
+    transition: 0.5s;
+    color: #D01418;
+    background-color: black;
+    padding: 5px;
+}
+
 .cadeiras {
     background-image: url('../imgs/cadeirasgamer.png');
+    background-repeat: no-repeat;
 }
 
 .computadores {
     background-image: url('../imgs/computadores.png');
+    background-repeat: no-repeat;
 }
 
 
@@ -213,7 +263,8 @@ footer {
 }
 
 .footer > img {
-    padding: 100px;
+    padding: 60px;
+    width: 350px;
 }
 
 .footer > .redes {
@@ -236,11 +287,12 @@ footer {
 
 .copyright {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
 
     font-family: 'Roboto';
     font-size: 14px;
     text-align: center;
 
-    background-color: #C4C4C4;
+    border: 1px solid black;
+    background-color: whitesmoke;
 }
