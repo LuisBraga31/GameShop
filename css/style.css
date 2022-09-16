@@ -63,6 +63,7 @@ header {
 
 .carrinho:hover {
     transition: 0.5s;
+    transform: scale(1.3);
     color: azure;   
 }
 
@@ -230,12 +231,10 @@ main {
     color: #F3F3F3;
 }
 
-
-.card-estrela > p:hover{
+.card-estrela:hover {
     transition: 0.5s;
-    color: #D01418;
-    background-color: black;
-    padding: 5px;
+    transform: scale(1.1);
+    
 }
 
 .cadeiras {
@@ -283,6 +282,11 @@ footer {
 .redes-icones {
     display: flex;
     gap: 50px;
+}
+
+.redes-icones > a:hover {
+    transition: 1.5s;
+    transform: rotate(360deg);
 }
 
 .copyright {
