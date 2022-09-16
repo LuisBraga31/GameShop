@@ -40,17 +40,31 @@ header {
 
 }
 
-.navegacao > a {
+.navegacao > div {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    
+}
+
+.navegacao > div > a {
     font-size: 20px;
     text-decoration: none;
     font-family: 'Roboto';
     color: white;
+    
 }
 
-.navegacao > a:hover{
+.navegacao > div a:hover{
     transition: 0.6s;
     font-size: 25px;
     color: #D01418;
+}
+
+.navegacao input, label {
+    display: none;
+    color: white;
 }
 
 .carrinho {

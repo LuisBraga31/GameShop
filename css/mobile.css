@@ -9,9 +9,7 @@
     margin-left: 1%;
 }
 
-.navegacao {
-   display: none;
-}
+
 
 /* Main */
 
@@ -61,4 +59,35 @@
     padding-bottom: 20px;
 }
 
+}
+
+
+@media (max-width:700px) {
+    .navegacao label {
+        display: block;
+    }
+    
+    .navegacao > div {
+        display: none;
+    
+        width: 140px;
+        height: 60px;
+    
+    }
+    
+    .navegacao > div a:hover{
+        font-size: 15px;
+    }
+    
+    .navegacao > div a {
+        font-size: 14px;
+    }
+    
+    .navegacao input:checked + div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
 }
