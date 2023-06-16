@@ -12,7 +12,6 @@
 <body>
 
     <header>
-        
         <div class="logo">
             <img src="imgs/Logo.png" alt="gameshop">
         </div>
@@ -54,29 +53,38 @@
 
             <div class="destaques-cards">
                 
-                <div class="card-destaque">
+                <div id="fade" class="hide"></div>
+                <div id="modal" class=" modal hide">
+                  <div class="modal-header">
+                    <h2 class="modal-title"> </h2>
+                    <button id="close-modal">Fechar</button>
+                  </div>
+                  <div class="modal-body"></div> 
+                </div>
+
+                <a id="detroit" class="card-destaque">
                     <img class="jogo" src="imgs/detroit.png" alt="">
                     <img class="traco"src="imgs/vector_traco.png" alt="">
                     <p class="valor"> R$ 3.200,00 </p>
                     <p class="valor-juros"> 12 x R$ 266,66 sem juros </p>
-                    <a class="envio" href="#"> Envio Grátis </a>
-                </div>
+                    <p class="envio" href="#"> Envio Grátis </p>
+                </a>
             
-                <div class="card-destaque">
+                <a id="fifa" class="card-destaque">
                     <img class="jogo" src="imgs/fifa21.png" alt="">
                     <img class="traco" src="imgs/vector_traco.png" alt="">
                     <p class="valor"> R$ 3.200,00 </p>
                     <p class="valor-juros"> 12 x R$ 266,66 sem juros </p>
-                    <a class="envio" href="#"> Envio Grátis </a>
-                </div>
+                    <p class="envio" href="#"> Envio Grátis </p>
+                </a>
 
-                <div class="card-destaque">
+                <a id="mkombat" class="card-destaque">
                     <img class="jogo" src="imgs/mortalkombat.png" alt="">
                     <img class="traco" src="imgs/vector_traco.png" alt="">
                     <p class="valor"> R$ 3.200,00 </p>
                     <p class="valor-juros"> 12 x R$ 266,66 sem juros </p>
-                    <a class="envio" href="#"> Envio Grátis </a>
-                </div>
+                    <p class="envio" href="#"> Envio Grátis </p>
+                </a>
 
             </div>
 
@@ -127,5 +135,7 @@
 
     </footer>
     
+    <script type="module" src="./js/script.js"></script>
+
 </body>
 </html>
